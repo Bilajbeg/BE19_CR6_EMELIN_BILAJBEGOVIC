@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Your+Selected+Font+Family&display=swap');
+
+
+body {
+    min-height: 400vh;
+    background: linear-gradient(to bottom, #343a40, #23272b);
+    margin: 0;
+    padding: 0;
+}
+
+
+.hero {
+    height: 400px;
+    width: 100%;
+    background-image: url('/image/hero_2.jpg');
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+
+.text_event {
+    text-shadow: 0 0 3px #FF0000, 0 0 5px #0000FF;
+}
+
+.text_event:hover {
+    text-shadow: 8px 8px 8px white;
+    /* Additional styles for the hover effect */
+}
+
+/* Custom styles for dark navbar */
+.custom-navbar {
+    background-color: #343a40;
+    /* Dark background color */
+}
+
+.custom-navbar .navbar-brand,
+.custom-navbar .nav-link {
+    color: white;
+    /* White text color */
+}
+
+/* Gradient background for body */
+
+.card-title {
+    font-size: 26px;
+    font-weight: bold;
+    text-shadow: 3px 3px 3px gray;
+}
+
+.card-title:hover {
+    font-size: 28px;
+    text-shadow: 3px 3px 3px dodgerblue;
+    /* Additional styles for the hover effect */
+}
+
+
+.card-text {
+    font-weight: bold;
+    color: dodgerblue;
+    text-shadow: 1px 1px 1px gray;
+}
+
+span {
+    color: black;
+    text-shadow: 1px 1px 1px gray;
+    font-family: 'Courgette', cursive;
+    font-family: 'Ysabeau Infant', sans-serif;
+}
+
+.shadow_1 {
+    box-shadow: 0 0 30px rgba(255, 255, 255, 0.5);
+    /* White shadow with reduced opacity */
+}
+
+h1 {
+    font-family: 'Courgette', cursive;
+    font-family: 'Dancing Script', cursive;
+    text-shadow: 3px 3px 3px gray;
+}
+
+h1:hover {
+    text-shadow: 4px 4px 4px yellow;
+    /* Additional styles for the hover effect */
+}
+
+/* Define the transition for smoother scaling */
+.hover-zoom {
+    transition: transform 0.3s ease-in-out;
+}
+
+/* Apply the hover effect to scale the image */
+.hover-zoom:hover {
+    transform: scale(1.1);
+    /* Increase the scale to make it slightly bigger */
+}
+
+.btn:hover {
+    font-size: 1.2em;
+    /* Adjust the value as needed for the desired size increase */
+}
