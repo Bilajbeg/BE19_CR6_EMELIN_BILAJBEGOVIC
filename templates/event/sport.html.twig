@@ -14,7 +14,6 @@
                         <div class="card-body">
                           <h5 class="card-title">{{ event.name }}</h5>
                           <hr>
-                          {# <p class="card-text"><span>Description:</span><br> {{ event.description }}</p> #}
                           <p class="card-text"><span>📅:</span> {{ event.dateTime ? event.dateTime|date('Y-m-d ⏳: H:i:s') : '' }}</p>
                           <p class="card-text"><span>Type:</span> {{ event.type }}</p>
                           <hr>

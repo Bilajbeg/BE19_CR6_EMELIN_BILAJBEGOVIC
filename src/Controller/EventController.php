@@ -85,9 +85,12 @@ class EventController extends AbstractController
     {
         $events = $eventRepository->findBy(['type' => $type]);
         $template = match ($type) {
+            'music' => 'event/music.html.twig',
             'sport' => 'event/sport.html.twig',
             'movie' => 'event/movie.html.twig',
             'theater' => 'event/theater.html.twig',
+            'operette' => 'event/operette.html.twig',
+            'fun' => 'event/fun.html.twig',
             default => 'event/index.html.twig',
         };
         return $this->render($template, [
