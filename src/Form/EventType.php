@@ -6,6 +6,7 @@ use App\Entity\Event;
 use Symfony\Component\Form\AbstractType;
 use Symfony\Component\Form\FormBuilderInterface;
 use Symfony\Component\OptionsResolver\OptionsResolver;
+use Symfony\Component\Form\Extension\Core\Type\ChoiceType;
 
 class EventType extends AbstractType
 {
@@ -45,19 +46,20 @@ class EventType extends AbstractType
                 'attr' => ['class' => 'form-control mt-1'],
                 'label_attr' => ['class' => 'text-white my-2']
             ])
-            ->add('url', null, [
+            ->add('type', ChoiceType::class, [
                 'attr' => ['class' => 'form-control mt-1'],
                 'choices'  => [
-                    'Music' => 'music',
-                    'Sport' => 'sport',
-                    'Movie' => 'movie',
-                    'Theater' => 'theater',
-                    'Operette' => 'operette',
-                    'Fun' => 'fun',
+                    'Music' => "music",
+                    'Sport' => "sport",
+                    'Movie' => "movie",
+                    'Theater' => "theater",
+                    'Operette' => "operette",
+                    'Fun' => "fun",
                 ],
+
                 'label_attr' => ['class' => 'text-white my-2']
             ])
-            ->add('type', ChoiceType::class, [
+            ->add('url', null, [
                 'attr' => ['class' => 'form-control mt-1'],
                 'label_attr' => ['class' => 'text-white my-2']
             ]);
